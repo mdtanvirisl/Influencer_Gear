@@ -1,0 +1,290 @@
+/* Fonts style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* utility  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+main {
+    margin: 5%;
+}
+
+/* Header Styles */
+header {
+    margin: 5%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.h-title {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* influencer Styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.influencer {
+    width: 582px;
+    height: 270px;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.button {
+    width: 196px;
+    height: 44px;
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    border-radius: 10px;
+    padding: 10px 24px;
+}
+
+.influencer-img {
+    width: 475px;
+    height: 475px;
+    background-image: url(images/Circle-design.svg);
+}
+
+.influencer-img img {
+    width: 440px;
+    height: 414px;
+    padding: 2%;
+}
+
+/* logo Style */
+.container-logo {
+    /* Width: 1110px;
+    Height: 110px; */
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 3%;
+    border: gray solid;
+    border-left: none;
+    border-right: none;
+}
+
+/* Collection Styles */
+.container-popular {
+    /* Width: 1047px;
+    Height: 1662px; */
+    margin-left: 100px;
+    margin-right: 197px;
+}
+
+.popular {
+    display: flex;
+    justify-content: center;
+}
+
+.container-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    column-gap: 35px;
+}
+
+.content {
+    Width: 329px;
+    Height: 476px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.content-img {
+    Width: 300px;
+    Height: 256px;
+}
+
+.star {
+    Width: 122px;
+    Height: 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.fa-star.filled {
+    color: orange;
+}
+
+.fa-star.empty {
+    color: gray;
+}
+
+.para {
+    margin-top: -20px;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #E02C6D;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 2%;
+}
+
+/* container fatures  */
+.container-Features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image {
+    Width: 404px;
+    Height: 270px;
+    margin-left: 60px;
+}
+
+.feature-detail {
+    Width: 610px;
+    Height: 224px;
+    margin-right: 150px;
+}
+
+.t-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* footer styles  */
+footer {
+    background-color: #0A0826;
+    color: white;
+}
+
+.footer-copy {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 132px;
+    height: 32px;
+    margin-left: 57px;
+}
+
+@media only screen and (max-width: 688px) {
+    /* main {
+        margin: 10%;
+    } */
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0px;
+    }
+
+    .menu a {
+        margin-left: 2px;
+        margin-right: 2px;
+        text-decoration: none;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        /* row-gap: 200px; */
+    }
+
+    .influencer {
+        width: 300px;
+        height: 270px;
+    }
+
+    .influencer-img {
+        width: 350px;
+        height: 350px;
+        background-image: url(images/Circle-design.svg);
+    }
+
+    .influencer-img img {
+        width: 350px;
+        height: 350px;
+        padding: 2%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .container-popular {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .logo {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .container-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-Features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-image {
+        Width: 250px;
+        Height: 270px;
+        margin-left: 0%;
+        margin-right: 5px;
+    }
+
+    .feature-detail {
+        Width: 300px;
+        Height: 300px;
+        margin-right: 0%;
+    }
+
+    .t-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+}
